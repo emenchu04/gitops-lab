@@ -8,7 +8,7 @@
 aplicaciones:
   web:
     version: "2.0"
-    replicas: 5
+    replicas: 10
   base-datos:
     version: "1.0"
     replicas: 1

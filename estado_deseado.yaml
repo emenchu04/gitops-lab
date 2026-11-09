@@ -1,0 +1,14 @@
+# ESTADO DESEADO (esto hace el papel del "repositorio Git")
+#
+# Aquí declaras QUE quieres que corra. No dices COMO hacerlo (eso es "declarativo").
+# El agente se encarga de que la realidad coincida con lo que escribas aqui.
+#
+# Cada entrada es una "aplicacion" con su version y numero de replicas.
+
+aplicaciones:
+  web:
+    version: "2.0"
+    replicas: 5
+  base-datos:
+    version: "1.0"
+    replicas: 1

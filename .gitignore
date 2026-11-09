@@ -1,0 +1,8 @@
+# El estado REAL representa el "cluster" (la realidad), NO la fuente de verdad.
+# En GitOps solo se versiona el estado DESEADO, nunca el real.
+# Por eso excluimos este archivo del repositorio.
+estado_real.json
+
+# Cache de Python
+__pycache__/
+*.pyc

@@ -1,0 +1,23 @@
+# Equivalente real de tu "web" en estado_deseado.yaml.
+# Un Deployment le dice a Kubernetes: "mantén N copias (replicas) de este contenedor".
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: web
+  labels:
+    app: web
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: web
+  template:
+    metadata:
+      labels:
+        app: web
+    spec:
+      containers:
+        - name: nginx
+          image: nginx:1.27
+          ports:
+            - containerPort: 80
